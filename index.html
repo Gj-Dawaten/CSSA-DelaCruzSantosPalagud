@@ -874,11 +874,11 @@
         }
         function prepareOrderData(event) {
             event.preventDefault(); 
-              const orderData = cart.map(item => ({
-                  prod_name: item.name,
-                  prod_price: item.price
-                                }));
-        document.getElementById('cust_order').value = JSON.stringify(orderData);
+           const orderData = cart.map(item => ({
+  prod_name: item.name,
+  prod_price: item.price
+}));
+document.getElementById('cust_order').value = JSON.stringify(orderData);
             event.target.submit();
         }
         document.addEventListener('DOMContentLoaded', () => {
